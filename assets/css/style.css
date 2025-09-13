@@ -1,0 +1,20 @@
+
+/* Customizações extras (se precisar além do Tailwind) */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Exemplo: cor personalizada */
+.text-orange-600 {
+  color: #ea580c; /* cor laranja forte */
+}
+.bg-orange-500 {
+  background-color: #f97316;
+}
+.bg-orange-logo {
+  background-color: #ff914d;
+}
+.text-yellow {
+    background-color: #ffbf5a;
+}
