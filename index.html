@@ -14,7 +14,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -29,18 +29,7 @@
 <body class="font-[Poppins] text-gray-800">
 
     <!-- Navbar -->
-    <header class="bg-orange-logo text-white">
-        <div class="container mx-auto flex justify-between items-center py-4 px-6">
-            <img src="assets/img/f4bank_logo_1.png" alt="Hero Image" class="h-8">
-            <nav>
-                <ul class="flex space-x-6 font-semibold">
-                    <li><a href="index.html" class="hover:text-orange-200">Home</a></li>
-                    <li><a href="sobre.html" class="hover:text-orange-200">Sobre Nós</a></li>
-                    <li><a href="produtos.html" class="hover:text-orange-200">Produtos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div id="menu"></div>
 
     <!-- Hero -->
     <section class="bg-gray-100 py-40 px-20 text-center" data-aos="fade-up">
@@ -55,7 +44,7 @@
                         class="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-orange-600 transition">Abrir
                         Conta</a>
                     <a href="produtos.html"
-                        class="text-yellow text-white px-6 py-3 rounded-lg shadow-lg hover:bg-yellow-600 transition">Nossos
+                        class="bg-yellow-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-yellow-900 transition">Nossos
                         Produtos</a>
                 </div>
                 <div class="md:w-1/4 mt-8 md:mt-0">
@@ -70,7 +59,9 @@
         <div class="container mx-auto flex flex-col md:flex-row items-center">
             <div class="md:w-1/2">
                 <h2 class="text-3xl font-bold text-orange-600 mb-4 ">Sobre Nós</h2>
-                <p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime officiis, excepturi sapiente eveniet quo ipsum veritatis doloribus quia tempore qui porro quidem mollitia perferendis magni amet, suscipit quae omnis!
+                <p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime officiis,
+                    excepturi sapiente eveniet quo ipsum veritatis doloribus quia tempore qui porro quidem mollitia
+                    perferendis magni amet, suscipit quae omnis!
                 </p>
                 <a href="sobre.html"
                     class="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-orange-600 transition">Saiba
@@ -83,28 +74,7 @@
     </section>
 
     <!-- Produtos -->
-    <section class="py-20 px-6 bg-orange-50" data-aos="fade-up">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold text-orange-600 mb-10">Produtos</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                    <i class="fas fa-credit-card text-4xl text-orange-500 mb-4"></i>
-                    <h3 class="font-semibold text-xl mb-2">Cartão sem taxa</h3>
-                    <p class="text-gray-600">Controle total dos seus gastos sem tarifas escondidas.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                    <i class="fas fa-university text-4xl text-orange-500 mb-4"></i>
-                    <h3 class="font-semibold text-xl mb-2">Conta digital</h3>
-                    <p class="text-gray-600">Movimente seu dinheiro com praticidade e segurança.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                    <i class="fas fa-shield-alt text-4xl text-orange-500 mb-4"></i>
-                    <h3 class="font-semibold text-xl mb-2">Segurança</h3>
-                    <p class="text-gray-600">Tradição de décadas aliada à inovação digital.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="produto"></div>
 
     <!-- Parceiros -->
     <section class="bg-gray-100 py-20 px-6">
@@ -113,15 +83,15 @@
 
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="assets/img/f4bank_logo.png" alt="Parceiro"
+                    <div class="swiper-slide"><img src="assets/img/parceiro.png" alt="Parceiro"
                             class="w-20 h-20 mx-auto rounded-full"></div>
-                    <div class="swiper-slide"><img src="assets/img/f4bank_logo.png" alt="Parceiro"
+                    <div class="swiper-slide"><img src="assets/img/parceiro1.png" alt="Parceiro"
                             class="w-20 h-20 mx-auto rounded-full"></div>
-                    <div class="swiper-slide"><img src="assets/img/f4bank_logo.png" alt="Parceiro"
+                    <div class="swiper-slide"><img src="assets/img/parceiro2.png" alt="Parceiro"
                             class="w-20 h-20 mx-auto rounded-full"></div>
-                    <div class="swiper-slide"><img src="assets/img/f4bank_logo.png" alt="Parceiro"
+                    <div class="swiper-slide"><img src="assets/img/parceiro3.png" alt="Parceiro"
                             class="w-20 h-20 mx-auto rounded-full"></div>
-                    <div class="swiper-slide"><img src="assets/img/f4bank_logo.png" alt="Parceiro"
+                    <div class="swiper-slide"><img src="assets/img/parceiro4.png" alt="Parceiro"
                             class="w-20 h-20 mx-auto rounded-full"></div>
                 </div>
             </div>
@@ -129,97 +99,76 @@
     </section>
 
     <!-- FAQ -->
-<!-- FAQ -->
-<section class="py-20 px-6 bg-orange-100 text-center" data-aos="fade-up">
-  <div class="container mx-auto max-w-3xl">
-    <h2 class="text-3xl font-bold text-orange-600 mb-10">Perguntas Frequentes</h2>
+    <section class="py-20 px-6 bg-orange-100 text-center" data-aos="fade-up">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-3xl font-bold text-orange-600 mb-10">Perguntas Frequentes</h2>
 
-    <!-- Pergunta 1 -->
-    <div class="bg-white rounded-lg shadow mb-4">
-      <button class="w-full text-left px-6 py-4 font-semibold text-orange-600 focus:outline-none flex justify-between items-center"
-        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
-        Qual é a tarifa para abrir uma conta?
-        <i class="fas fa-chevron-down transition-transform duration-300"></i>
-      </button>
-      <div class="hidden px-6 pb-4 text-gray-700 text-left">
-        Abrir uma conta é totalmente gratuito e não há taxas escondidas.
-      </div>
-    </div>
-
-    <!-- Pergunta 2 -->
-    <div class="bg-white rounded-lg shadow mb-4">
-      <button class="w-full text-left px-6 py-4 font-semibold text-orange-600 focus:outline-none flex justify-between items-center"
-        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
-        Como faço para solicitar meu cartão?
-        <i class="fas fa-chevron-down transition-transform duration-300"></i>
-      </button>
-      <div class="hidden px-6 pb-4 text-gray-700 text-left">
-        Você pode solicitar seu cartão diretamente pelo app ou na página de produtos do nosso site.
-      </div>
-    </div>
-
-    <!-- Pergunta 3 -->
-    <div class="bg-white rounded-lg shadow mb-4">
-      <button class="w-full text-left px-6 py-4 font-semibold text-orange-600 focus:outline-none flex justify-between items-center"
-        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
-        Quais são os limites da conta digital?
-        <i class="fas fa-chevron-down transition-transform duration-300"></i>
-      </button>
-      <div class="hidden px-6 pb-4 text-gray-700 text-left">
-        Os limites dependem do seu perfil, podendo ser ajustados pelo app conforme seu uso.
-      </div>
-    </div>
-
-    <!-- Pergunta 4 -->
-    <div class="bg-white rounded-lg shadow mb-4">
-      <button class="w-full text-left px-6 py-4 font-semibold text-orange-600 focus:outline-none flex justify-between items-center"
-        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
-        Como funciona a segurança da conta?
-        <i class="fas fa-chevron-down transition-transform duration-300"></i>
-      </button>
-      <div class="hidden px-6 pb-4 text-gray-700 text-left">
-        Utilizamos criptografia de ponta, autenticação em dois fatores e monitoramento contínuo das transações.
-      </div>
-    </div>
-
-    <!-- Pergunta 5 -->
-    <div class="bg-white rounded-lg shadow mb-4">
-      <button class="w-full text-left px-6 py-4 font-semibold text-orange-600 focus:outline-none flex justify-between items-center"
-        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
-        Posso transferir dinheiro para outros bancos?
-        <i class="fas fa-chevron-down transition-transform duration-300"></i>
-      </button>
-      <div class="hidden px-6 pb-4 text-gray-700 text-left">
-        Sim! As transferências podem ser feitas instantaneamente via PIX ou TED, direto pelo app.
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- Footer -->
-    <footer class="bg-orange-logo text-white py-10">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            <div class="h-20">
-                <img src="assets/img/f4bank_logo.png" alt="F4Bank Logo" class="h-40">
+            <!-- Perguntas -->
+            <div class="bg-white rounded-lg shadow mb-4">
+                <button
+                    class="w-full text-left px-6 py-4 font-semibold text-orange-600 flex justify-between items-center"
+                    onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+                    Qual é a tarifa para abrir uma conta?
+                    <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="hidden px-6 pb-4 text-gray-700 text-left">
+                    Abrir uma conta é totalmente gratuito e não há taxas escondidas.
+                </div>
             </div>
-            <div>
-                <h3 class="font-bold text-xl mb-2">Contato</h3>
-                <p>Email: contato@f4bank.com</p>
-                <p>Telefone: (99) 9999-9999</p>
+
+            <div class="bg-white rounded-lg shadow mb-4">
+                <button
+                    class="w-full text-left px-6 py-4 font-semibold text-orange-600 flex justify-between items-center"
+                    onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+                    Como faço para solicitar meu cartão?
+                    <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="hidden px-6 pb-4 text-gray-700 text-left">
+                    Você pode solicitar seu cartão diretamente pelo app ou na página de produtos do nosso site.
+                </div>
             </div>
-            <div>
-                <h3 class="font-bold text-xl mb-2">Redes Sociais</h3>
-                <div class="flex justify-center md:justify-start space-x-4">
-                    <a href="https://www.linkedin.com/in/juliana-frossard-32877522b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin text-2xl"></i></a>
-                    <a href="https://www.instagram.com/frossardjuliana/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram text-2xl"></i></a>
+
+            <div class="bg-white rounded-lg shadow mb-4">
+                <button
+                    class="w-full text-left px-6 py-4 font-semibold text-orange-600 flex justify-between items-center"
+                    onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+                    Quais são os limites da conta digital?
+                    <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="hidden px-6 pb-4 text-gray-700 text-left">
+                    Os limites dependem do seu perfil, podendo ser ajustados pelo app conforme seu uso.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow mb-4">
+                <button
+                    class="w-full text-left px-6 py-4 font-semibold text-orange-600 flex justify-between items-center"
+                    onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+                    Como funciona a segurança da conta?
+                    <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="hidden px-6 pb-4 text-gray-700 text-left">
+                    Utilizamos criptografia de ponta, autenticação em dois fatores e monitoramento contínuo das
+                    transações.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow mb-4">
+                <button
+                    class="w-full text-left px-6 py-4 font-semibold text-orange-600 flex justify-between items-center"
+                    onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+                    Posso transferir dinheiro para outros bancos?
+                    <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="hidden px-6 pb-4 text-gray-700 text-left">
+                    Sim! As transferências podem ser feitas instantaneamente via PIX ou TED, direto pelo app.
                 </div>
             </div>
         </div>
-        <div class="text-center mt-8 text-sm">&copy; 2025 F4Bank. Todos os direitos reservados - Juliana Scandola
-            Frossard.</div>
-    </footer>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
 
     <!-- Scripts -->
     <!-- AOS -->
@@ -246,6 +195,21 @@
                 1024: { slidesPerView: 5 },
             },
         });
+    </script>
+
+    <!-- Carregar menu e footer e produto -->
+    <script>
+        fetch("menu.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("menu").innerHTML = data);
+
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+
+        fetch("cardProduto.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("produto").innerHTML = data);
     </script>
 
 </body>
