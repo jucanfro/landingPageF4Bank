@@ -5,7 +5,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Exemplo: cor personalizada */
 .text-orange-600 {
   color: #ea580c; /* cor laranja forte */
 }
@@ -13,8 +12,8 @@ body {
   background-color: #f97316;
 }
 .bg-orange-logo {
-  background-color: #ff914d;
+  background-color: #ff914d; /* cor laranja fonte */
 }
 .text-yellow {
-    background-color: #ffbf5a;
+    background-color: #ffbf5a; /* cor laranja fonte */
 }
