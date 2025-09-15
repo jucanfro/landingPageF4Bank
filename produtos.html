@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F4Bank - O caminho inteligente</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="font-[Poppins] text-gray-800">
+
+    <!-- Navbar -->
+    <div id="menu"></div>
+
+
+    <body class="bg-white text-gray-800">
+
+        <!-- Header (menu) -->
+        <!-- Menu -->
+        <div id="menu"></div>
+
+        <!-- Conteúdo -->
+        <main class="max-w-7xl mx-auto px-6 py-16">
+
+            <h2 class="text-3xl font-bold mb-12">Produtos</h2>
+
+            <!-- Card 1 - Imóvel -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <img src="assets/img/house.png" alt="Imóvel" class="rounded-xl shadow-lg">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Imóvel</h3>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, consequuntur. Voluptas
+                        molestiae, quisquam voluptate eveniet libero maiores hic praesentium ipsam autem illum
+                        voluptatum,
+                        molestias impedit quidem consequuntur veniam laboriosam placeat.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-green-600 font-medium">
+                        <li>✔ Benefício 1</li>
+                        <li>✔ Benefício 2</li>
+                        <li>✔ Benefício 3</li>
+                    </ul>
+                    <button class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600"
+                        onclick="window.open('https://wa.me/5516991728665?text=Bom%20dia,%20Vi%20seu%20projeto%20no%20github%20:)', '_blank')">
+                        Saiba Mais
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Card 2 - Serviços -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-4">Serviços</h3>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum dolorem et officia, facilis
+                        ullam
+                        voluptatum quasi necessitatibus officiis veniam architecto ducimus laboriosam. Cumque aspernatur
+                        iure iusto temporibus autem maiores?
+                    </p>
+                    <ul class="space-y-2 mb-6 text-green-600 font-medium">
+                        <li>✔ Vantagem 1</li>
+                        <li>✔ Vantagem 2</li>
+                        <li>✔ Vantagem 3</li>
+                    </ul>
+                    <button class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600"
+                        onclick="window.open('https://wa.me/5516991728665?text=Bom%20dia,%20Vi%20seu%20projeto%20no%20github%20:)', '_blank')">
+                        Saiba Mais
+                    </button>
+
+                </div>
+                <img src="assets/img/service.png" alt="Serviços" class="rounded-xl shadow-lg order-1 md:order-2">
+            </div>
+
+            <!-- Card 3 - Veículo -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <img src="assets/img/car.png" alt="Veículo" class="rounded-xl shadow-lg">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Veículo</h3>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci dolore velit expedita
+                        reprehenderit in repudiandae, magni consequuntur ipsum corporis, dolorem sequi fugit omnis!
+                        Cupiditate cumque veritatis voluptas incidunt temporibus placeat.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-green-600 font-medium">
+                        <li>✔ Benefício 1</li>
+                        <li>✔ Benefício 2</li>
+                        <li>✔ Benefício 3</li>
+                    </ul>
+                    <button class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600"
+                        onclick="window.open('https://wa.me/5516991728665?text=Bom%20dia,%20Vi%20seu%20projeto%20no%20github%20:)', '_blank')">
+                        Saiba Mais
+                    </button>
+
+                </div>
+            </div>
+        </main>
+
+
+        <!-- Footer -->
+        <div id="footer"></div>
+
+        <!-- Scripts -->
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                speed: 2000,
+                slidesPerView: 5,
+                spaceBetween: 32,
+                breakpoints: {
+                    640: { slidesPerView: 2 },
+                    768: { slidesPerView: 3 },
+                    1024: { slidesPerView: 5 },
+                },
+            });
+        </script>
+
+        <!-- Carregar menu e footer e produto -->
+        <script>
+            fetch("menu.html")
+                .then(res => res.text())
+                .then(data => document.getElementById("menu").innerHTML = data);
+
+            fetch("footer.html")
+                .then(res => res.text())
+                .then(data => document.getElementById("footer").innerHTML = data);
+        </script>
+
+    </body>
+
+</html>
